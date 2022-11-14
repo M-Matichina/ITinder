@@ -1,5 +1,5 @@
 # ITinder
-## Mobile application for finding an IT specialist.
+## Mobile application for finding an IT specialist
 ### Application structure:
 * Login Screen
 * Profile Screen
