@@ -1,1 +1,1 @@
-# ITinder Hello
+Mobile application for finding an IT specialist.
