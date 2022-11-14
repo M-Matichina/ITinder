@@ -1,12 +1,13 @@
 # ITinder
 ## Mobile application for finding an IT specialist
-### Application structure:
+### Application structure
 * Login Screen
 * Profile Screen
 * Search Screen
 * Chat Screen
-### Firebase:
+### Firebase
 * Auth
 * Firestore
 * Database
 * Storage
+### Design
