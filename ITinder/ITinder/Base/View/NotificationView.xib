@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NotificationView" customModule="ITinder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="624" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Glv-y4-Kih">
+                    <rect key="frame" x="16" y="70" width="592" height="94"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Данные профиля успешно сохранены" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppJ-ws-Uwu">
+                            <rect key="frame" x="16" y="16" width="560" height="62"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstItem="ppJ-ws-Uwu" firstAttribute="top" secondItem="Glv-y4-Kih" secondAttribute="top" constant="16" id="3Tf-G4-E8L"/>
+                        <constraint firstAttribute="trailing" secondItem="ppJ-ws-Uwu" secondAttribute="trailing" constant="16" id="3gn-SG-LXz"/>
+                        <constraint firstAttribute="bottom" secondItem="ppJ-ws-Uwu" secondAttribute="bottom" constant="16" id="DBZ-pE-9dD"/>
+                        <constraint firstItem="ppJ-ws-Uwu" firstAttribute="leading" secondItem="Glv-y4-Kih" secondAttribute="leading" constant="16" id="LnW-0z-P1z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Glv-y4-Kih" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="4or-ZA-7ID"/>
+                <constraint firstAttribute="bottom" secondItem="Glv-y4-Kih" secondAttribute="bottom" constant="16" id="GGP-VG-I0d"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Glv-y4-Kih" secondAttribute="trailing" constant="16" id="ZHl-7H-xkG"/>
+                <constraint firstItem="Glv-y4-Kih" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="uuo-ur-M9K"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="topLayoutMarginAddition">
+                    <real key="value" value="38"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="backView" destination="Glv-y4-Kih" id="fyx-9r-tcQ"/>
+            </connections>
+            <point key="canvasLocation" x="54" y="5"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

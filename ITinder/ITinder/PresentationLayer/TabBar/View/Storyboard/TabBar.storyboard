@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Het-p9-EVl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat-->
+        <scene sceneID="QB5-A5-fwL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" id="9jN-mG-VFf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QrQ-uk-zna"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24M-TS-yat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="1717"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="hgI-JD-riO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="QAy-XN-cfw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Spq-gh-rm2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Daj-ar-RdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="1717"/>
+        </scene>
+        <!--Чат-->
+        <scene sceneID="AzC-9u-CKd">
+            <objects>
+                <navigationController storyboardIdentifier="ChatNavigationController" id="dZD-Lw-P5Y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Чат" image="message" catalog="system" selectedImage="message.fill" id="ogQ-RH-VoZ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mwa-mD-J9W">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9jN-mG-VFf" kind="relationship" relationship="rootViewController" id="dVm-AY-ViS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CLt-uO-9F0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="1319"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="7kH-Md-BnB">
+            <objects>
+                <navigationController storyboardIdentifier="ProfileNavigationController" id="cDq-Ek-zcc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Профиль" image="person" catalog="system" selectedImage="person.fill" id="NaS-Ld-zGP"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yhU-mM-tc7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QAy-XN-cfw" kind="relationship" relationship="rootViewController" id="mGx-0K-8JI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGg-qv-pwB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="1319"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="RW4-9J-iHW">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarViewController" id="Het-p9-EVl" customClass="TabBarViewController" customModule="ITinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sJU-Br-k0a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xR-qa-HD5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="610"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Oex-Rr-A5O">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="32d-Rq-4QJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="U5G-sO-C43"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cG1-Q0-UaQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-537" y="1717"/>
+        </scene>
+        <!--Поиск-->
+        <scene sceneID="eOp-11-UlS">
+            <objects>
+                <navigationController storyboardIdentifier="SearchNavigationController" id="Unl-Qg-t3l" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Поиск" image="hand.draw" catalog="system" selectedImage="hand.draw.fill" id="bZJ-W9-5I5"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CEp-7t-dZn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="32d-Rq-4QJ" kind="relationship" relationship="rootViewController" id="D5O-3T-prq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65q-1L-5Aq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-539" y="1319"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hand.draw" catalog="system" width="128" height="113"/>
+        <image name="hand.draw.fill" catalog="system" width="128" height="109"/>
+        <image name="message" catalog="system" width="128" height="113"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
+</document>

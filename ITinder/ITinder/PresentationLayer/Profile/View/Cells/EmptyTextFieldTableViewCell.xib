@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="142" id="9ov-Bg-D4N" customClass="EmptyTextFieldTableViewCell" customModule="ITinder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="9ov-Bg-D4N" id="Rk9-uv-Jpw">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGq-nq-2h0">
+                        <rect key="frame" x="16" y="0.0" width="362" height="46"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YhW-vf-Nfx">
+                                <rect key="frame" x="12" y="12" width="338" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="YhW-vf-Nfx" firstAttribute="top" secondItem="NGq-nq-2h0" secondAttribute="top" constant="12" id="MFf-gr-FEQ"/>
+                            <constraint firstItem="YhW-vf-Nfx" firstAttribute="leading" secondItem="NGq-nq-2h0" secondAttribute="leading" constant="12" id="SLY-FO-M9Q"/>
+                            <constraint firstAttribute="bottom" secondItem="YhW-vf-Nfx" secondAttribute="bottom" constant="12" id="YYt-Hp-2AD"/>
+                            <constraint firstAttribute="height" constant="46" id="g0R-2F-eub"/>
+                            <constraint firstAttribute="trailing" secondItem="YhW-vf-Nfx" secondAttribute="trailing" constant="12" id="seQ-W9-hra"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NGq-nq-2h0" firstAttribute="leading" secondItem="Rk9-uv-Jpw" secondAttribute="leading" constant="16" id="4wj-fQ-hiM"/>
+                    <constraint firstAttribute="bottom" secondItem="NGq-nq-2h0" secondAttribute="bottom" id="BN4-Hh-TZy"/>
+                    <constraint firstItem="NGq-nq-2h0" firstAttribute="top" secondItem="Rk9-uv-Jpw" secondAttribute="top" id="Yie-Gg-OfE"/>
+                    <constraint firstAttribute="trailing" secondItem="NGq-nq-2h0" secondAttribute="trailing" constant="16" id="xMZ-fg-jYE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Umd-Pv-HlO"/>
+            <connections>
+                <outlet property="backView" destination="NGq-nq-2h0" id="m8h-QH-HC5"/>
+                <outlet property="textField" destination="YhW-vf-Nfx" id="5eU-2e-r7e"/>
+            </connections>
+            <point key="canvasLocation" x="-52.173913043478265" y="147.99107142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

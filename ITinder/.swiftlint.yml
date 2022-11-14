@@ -1,0 +1,35 @@
+warning_threshold: 1
+
+disabled_rules:
+- trailing_newline
+- todo
+- unused_optional_binding
+- redundant_string_enum_value
+- nesting
+- identifier_name
+- duplicate_imports
+- orphaned_doc_comment
+- trailing_whitespace
+- force_cast
+- function_body_length
+- cyclomatic_complexity
+#- weak_delegate
+
+excluded:
+- Pods
+
+type_body_length:
+- 350 # warning
+- 1000 # error
+
+file_length:
+- 600 # warning
+- 1200 # error
+
+line_length:
+    warning: 200
+    error: 200
+    ignores_comments: true
+    ignores_urls: true
+    ignores_function_declarations: true
+    ignores_interpolated_strings: true

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Chat View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ListChatViewController" id="Y6W-OH-hqX" customClass="ListChatViewController" customModule="ITinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="30" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="30" sectionFooterHeight="-1" estimatedSectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="APM-Fp-TrS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="PNN-LO-ya1"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="9mh-n4-FHc"/>
+                                </connections>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="92z-gW-kTA">
+                                <rect key="frame" x="16" y="469.33333333333331" width="382" height="202.66666666666669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.3" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Vbf-Ju-Lzg">
+                                        <rect key="frame" x="141" y="1.6666666666666643" width="100" height="97.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="ByM-eY-JlZ"/>
+                                            <constraint firstAttribute="height" constant="100" id="JXz-G0-Xer"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начните поиск коллег " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYT-fc-rxQ">
+                                        <rect key="frame" x="91.333333333333329" y="110.00000000000006" width="199.33333333333337" height="21.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Когда вы найдете интересного коллегу, он отобразится во вкладке &quot;все коллеги&quot;, и вы сможете начать с ним переписку" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBg-ey-JMj">
+                                        <rect key="frame" x="14.666666666666657" y="141.66666666666669" width="353" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="APM-Fp-TrS" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="6c1-Pv-2aG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="92z-gW-kTA" secondAttribute="bottom" constant="190" id="M3r-r8-o9C"/>
+                            <constraint firstItem="APM-Fp-TrS" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="WZl-cB-bF1"/>
+                            <constraint firstItem="92z-gW-kTA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="XOm-lg-nm0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="92z-gW-kTA" secondAttribute="trailing" constant="16" id="fZp-Eg-NZJ"/>
+                            <constraint firstAttribute="bottom" secondItem="APM-Fp-TrS" secondAttribute="bottom" id="hfa-Rf-faB"/>
+                            <constraint firstItem="APM-Fp-TrS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lHO-gh-Dwq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CWu-Wp-GsK"/>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="M3r-r8-o9C" id="TZv-c8-trQ"/>
+                        <outlet property="stackElementsView" destination="92z-gW-kTA" id="Oru-qP-JrS"/>
+                        <outlet property="tableView" destination="APM-Fp-TrS" id="B8R-vl-UcU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.3" catalog="system" width="128" height="62"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
